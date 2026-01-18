@@ -49,14 +49,9 @@
       justify-content: space-between;
     }
 
-    .logo {
-      font-weight: 900;
-      letter-spacing: .5px;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 22px;
-    }
+    .logo-wrap{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.5px}
+    .logo-img{height:42px;width:auto;}
+    .logo-text{background: linear-gradient(135deg, var(--primary), var(--secondary));-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:20px;}
 
     .menu a {
       margin-left: 22px;
@@ -271,7 +266,7 @@
 <body>
   <header>
     <div class="nav">
-      <div class="logo">PGC Cargo Solutions Pvt Ltd</div>
+      <div class="logo-wrap"><img src="logo.png" alt="PGC Cargo Solutions" class="logo-img" /><span class="logo-text">PGC Cargo Solutions Pvt Ltd</span></div>
       <nav class="menu">
         <a href="#home">Home</a>
         <a href="#services">Services</a>
